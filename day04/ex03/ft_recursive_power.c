@@ -1,10 +1,9 @@
-#include <stdio.h>
-
-int main()
+int ft_recursive_power(int nb, int power)
 {
-    int n;
+    if(power < 0)
+        return(0);
+    if(power == 0)
+        return (1);
 
-    n = ft_iterative_factorial(5);
-    printf("%d\n", n);
-    return(0);
+    return(nb * ft_recursive_power(nb, power - 1));
 }
