@@ -1,5 +1,3 @@
-#include <stdio.h>
-
 int ft_fibonacci(int index)
 {
     if(index < 0)
@@ -7,12 +5,4 @@ int ft_fibonacci(int index)
     if(index == 0 || index == 1)
         return index;
     else return (ft_fibonacci(index -1) + ft_fibonacci(index - 2));
-}
-int main()
-{
-    int n;
-
-    n = ft_fibonacci(13);
-    printf("%d\n", n);
-    return(0);
 }
