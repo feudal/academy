@@ -1,5 +1,3 @@
-#include <stdio.h>
-
 int ft_iterative_power(int nb, int power)
 {
     int rez;
@@ -16,13 +14,4 @@ int ft_iterative_power(int nb, int power)
         power--;
     }
     return(rez);
-}
-
-int main()
-{
-    int n;
-
-    n = ft_iterative_power(2, 3);
-    printf("%d\n", n);
-    return(0);
 }
